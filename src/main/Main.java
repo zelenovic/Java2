@@ -22,3 +22,6 @@ public class Main {
     }
     
 }
+
+
+// probati da se napravi novi objekat klase Course i da se onda to dodeli kao kurs nekom objektu klase student, kod kuce
