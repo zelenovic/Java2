@@ -23,6 +23,9 @@ public class Course {
         this.numberOfClasses = numberOfClasses;
     }
     
-    
+    public Course() {
+        this.name = "QA course";
+        this.numberOfClasses = 50;
+    }
     
 }

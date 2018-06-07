@@ -32,6 +32,10 @@ public class Computer {
         this.hardDrive = hardDrive;
     }
     
-    
+    public Computer() {
+        this.processTact = 2.4;
+        this.memory = 16.0;
+        this.hardDrive = 1024;
+    }
     
 }

@@ -45,9 +45,13 @@ public class Student {
     }
     
     public Student() {
+              
         this.firstName = "defaultName";
         this.lastName = "defaultSurname";
         this.yearOfBirth = 1990;
+        this.course = new Course();
+        this.computer = new Computer();
+        
     }
     
     public void info() {
