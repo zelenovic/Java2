@@ -19,6 +19,10 @@ public class Student {
     public Course getCourse() {
         return course;
     }
+    
+    public void setCourse(Course course) {
+    	this.course = course;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -55,15 +59,14 @@ public class Student {
     }
     
     public void info() {
-        System.out.println("First name: " + firstName);
-        System.out.println("Last name: " + lastName);
-        System.out.println("Year of birth: " + yearOfBirth);
-        System.out.println("Course name: " + course.getName());
-        System.out.println("Course number of classes: " + course.getNumberOfClasses());
-        System.out.println("Process tact: " + computer.getProcessTact());
-        System.out.println("Memory: " + computer.getMemory());
-        System.out.println("Hard driver: " + computer.getHardDrive());
+        System.out.println("First name: " + this.getFirstName());
+        System.out.println("Last name: " + this.getLastName());
+        System.out.println("Year of birth: " + this.getYearOfBirth());
+        System.out.println("Course name: " + this.getCourse().getName());
+        System.out.println("Course number of classes: " + this.getCourse().getNumberOfClasses());
+        System.out.println("Process tact: " + this.getComputer().getProcessTact() + " GHz");
+        System.out.println("Memory: " + this.getComputer().getMemory() + " GB RAM");
+        System.out.println("Hard drive: " + this.getComputer().getHardDrive() + " GB");
         System.out.println();
     }
-    
 }

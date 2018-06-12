@@ -28,4 +28,9 @@ public class Course {
         this.numberOfClasses = 50;
     }
     
+    public Course(Course course) {
+    	this.name = course.name;
+    	this.numberOfClasses = course.numberOfClasses;
+    }
+    
 }

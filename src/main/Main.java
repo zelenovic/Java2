@@ -1,5 +1,6 @@
 package main;
 
+import course.Course;
 import student.Student;
 
 public class Main {
@@ -16,6 +17,14 @@ public class Main {
         s1.getComputer().setProcessTact(3);
         s1.getComputer().setMemory(12);
         s1.getComputer().setHardDrive(768);
+        
+        s1.info();
+        
+        Course QA_course = new Course();
+        QA_course.setName("QA course");
+        QA_course.setNumberOfClasses(50);
+        
+        s1.setCourse(new Course(QA_course));
         
         s1.info();
         
